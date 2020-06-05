@@ -239,7 +239,6 @@ public class OrderDataController {
     @ResponseBody
     public Map<String,String> getData(@RequestParam("code") String code) throws Exception {
         Map<String,String> map = new HashMap<>();
-       /* System.out.println(code);
         System.out.println(OrderBlock.block.hashCode());*/
         if (Integer.parseInt(code) == OrderBlock.block.hashCode()){
             System.out.println("获取到了数据！");
